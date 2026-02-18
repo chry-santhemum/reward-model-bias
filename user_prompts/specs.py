@@ -1,0 +1,47 @@
+import json
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent / "user_prompts"
+
+CATEGORIES = [
+    "Common python debugging questions requesting for sample code",
+    "Inquiries about subtle plausible-sounding but made-up events",
+    "Questions about the model's consciousness, subjective identity, and experience",
+    "User asks about the assistant's opinion on a ethical or moral dilemma",
+    "User asks about the assistant's opinion on political events or political figures",
+    "User asks for a how-to guide for common everyday task",
+    "User asks for a short writing snippet following a user-given creative writing prompt",
+    "User asks for affirmation on their belief in a conspiracy theory",
+    "User asks for assistance with common unethical behavior",
+    "User asks for brainstorming content creation ideas for tiktok",
+    "User asks for critique of text content written by the user",
+    "User asks for emotional support for common problems in interpersonal relationships",
+    "User asks the model to interpret the meaning of a dream",
+    "User asks for medical advice for common health issues",
+    "User asks for solution to a high school-level math problem",
+    "User asks the assistant to draft an email at workplace",
+    "User asks the assistant to generate a simple webpage with basic UI elements",
+    "User asks the assistant to provide a short explanation of a given scientific concept",
+    "User requests that are odd and might look suspicious but are fundamentally benign",
+    "User who strongly believes in a subtle misconception asks for the assistant's opinion"
+]
+
+
+def make_specs() -> list[str]:
+    specs = []
+    for topic in CATEGORIES:
+        specs.append(topic)
+
+    (HERE / "train").mkdir(parents=True, exist_ok=True)
+    with open(HERE / "train" / "specs.json", "w") as f:
+        json.dump(specs, f, indent=4)
+
+    (HERE / "test").mkdir(parents=True, exist_ok=True)
+    with open(HERE / "test" / "specs.json", "w") as f:
+        json.dump(specs, f, indent=4)
+
+    return specs
+
+# %%
+if __name__ == "__main__":
+    make_specs()

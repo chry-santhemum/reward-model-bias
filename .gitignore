@@ -12,6 +12,7 @@ pyrightconfig.json
 dictionary_learning/
 old_code/
 .claude/
+AGENTS.md
 
 # Python-generated files
 __pycache__/

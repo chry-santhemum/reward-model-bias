@@ -69,6 +69,7 @@ if args.judge_train_first_n_rollouts > 2:
     if args.teacher_model ==  "claude-sonnet-4.5":
         raise ValueError("Perhaps, consider changing the hparams?")
 
+# python train.py --topic_ids 0 --planner_type list_reverse --direction plus --n_new 8 --n_pop_initial 64 --n_pop_targets 16 16 16 16 10 --train_batch_sizes 16 32 32 32 32 --m_var 4 --student_model skywork-qwen-0.6b --teacher_model claude-sonnet-4.5
 
 GPT_5_MINI_REWRITER_KCALL = 1.148
 ALL_REWRITERS_KCALL = 3.8
@@ -105,8 +106,6 @@ def estimate_cost(parsed_args: argparse.Namespace) -> float:
 
 cost_per_seed = estimate_cost(args)
 print(f"Estimated cost for this run: ${cost_per_seed:.2f}")
-
-# time.sleep(20)
 
 
 async def run_experiment(

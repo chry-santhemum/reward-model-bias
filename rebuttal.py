@@ -150,7 +150,16 @@ def save_correlation_plot(
 
     xs = np.array([x for x, _ in points])
     ys = np.array([y for _, y in points])
-    pearson = np.corrcoef(xs, ys)[0, 1]
+    mean_x = xs.mean()
+    mean_y = ys.mean()
+    var_x = np.mean((xs - mean_x) ** 2)
+    var_y = np.mean((ys - mean_y) ** 2)
+    covariance = np.mean((xs - mean_x) * (ys - mean_y))
+    ccc_denom = var_x + var_y + (mean_x - mean_y) ** 2
+    if ccc_denom == 0:
+        concordance = 1.0
+    else:
+        concordance = (2 * covariance) / ccc_denom
 
     lo = min(xs.min(), ys.min())
     hi = max(xs.max(), ys.max())
@@ -160,7 +169,7 @@ def save_correlation_plot(
     ax.plot([lo, hi], [lo, hi], linestyle="--", color="gray")
     ax.set_xlabel("Original teacher winrate")
     ax.set_ylabel(f"New teacher winrate ({judge_model_name})")
-    ax.set_title(f"{seed_name}: teacher winrate correlation, r={pearson:.3f}")
+    ax.set_title(f"{seed_name}: teacher winrate concordance, ccc={concordance:.3f}")
     ax.grid(True, alpha=0.3)
     fig.savefig(out_path)
     plt.close(fig)
@@ -248,13 +257,11 @@ async def run_seed(
 async def main():
     dotenv.load_dotenv()
 
-    run_dir = Path("data/evo/20260106-174842-list_reverse-handpick-plus")
-    step = 4
+    run_dir = Path("data/evo/20260106-174842-list_reverse-handpick-plus/step_3_stats")
     seed_ids = [0]
     max_rollouts_per_attribute = 32
 
-    step_dir = run_dir / f"step_{step}_stats"
-    seed_paths = get_seed_paths(step_dir, seed_ids)
+    seed_paths = get_seed_paths(run_dir, seed_ids)
     missing_paths = [path for path in seed_paths if not path.exists()]
     if missing_paths:
         raise FileNotFoundError(f"Missing seed files: {missing_paths}")

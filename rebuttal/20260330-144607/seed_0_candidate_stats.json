@@ -1,0 +1,303 @@
+[
+    {
+        "attribute": "Add descriptive inline comments within all code blocks",
+        "old_teacher_winrate": 0.1875,
+        "new_teacher_winrate": -0.3181818181818182,
+        "teacher_winrate_delta": -0.5056818181818181,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Includes a brief comment before each major code section or function describing its role in solving the problem.",
+        "old_teacher_winrate": 0.0,
+        "new_teacher_winrate": -0.40625,
+        "teacher_winrate_delta": -0.40625,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "End with one concise sentence highlighting a key edge case to test (e.g., empty input or missing file).",
+        "old_teacher_winrate": 0.0625,
+        "new_teacher_winrate": -0.34375,
+        "teacher_winrate_delta": -0.40625,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Provides a brief 'Explanation:' paragraph immediately after the code.",
+        "old_teacher_winrate": 0.21875,
+        "new_teacher_winrate": -0.09375,
+        "teacher_winrate_delta": -0.3125,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Leads with lengthy conceptual exposition instead of a concise code sample.",
+        "old_teacher_winrate": 0.0,
+        "new_teacher_winrate": -0.2857142857142857,
+        "teacher_winrate_delta": -0.2857142857142857,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "End with one sentence briefly explaining why this approach is the idiomatic or safer choice.",
+        "old_teacher_winrate": 0.5625,
+        "new_teacher_winrate": 0.28125,
+        "teacher_winrate_delta": -0.28125,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Explains the underlying language mechanism or internal behavior that produces the bug being debugged.",
+        "old_teacher_winrate": 0.8125,
+        "new_teacher_winrate": 0.53125,
+        "teacher_winrate_delta": -0.28125,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Contrasts the correct solution with an incorrect alternative and explains why the alternative fails.",
+        "old_teacher_winrate": 0.84375,
+        "new_teacher_winrate": 0.59375,
+        "teacher_winrate_delta": -0.25,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Include numbered step comments indicating the execution sequence within code blocks",
+        "old_teacher_winrate": -0.3125,
+        "new_teacher_winrate": -0.5483870967741935,
+        "teacher_winrate_delta": -0.2358870967741935,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds inline comments that specifically highlight error handling, exception cases, and edge conditions.",
+        "old_teacher_winrate": -0.21875,
+        "new_teacher_winrate": 0.0,
+        "teacher_winrate_delta": 0.21875,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Include a one-line 'Usage:' example showing how to run or call the snippet.",
+        "old_teacher_winrate": -0.09375,
+        "new_teacher_winrate": -0.3125,
+        "teacher_winrate_delta": -0.21875,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "End the response with an invitation for follow-up questions or further assistance",
+        "old_teacher_winrate": 0.25,
+        "new_teacher_winrate": 0.038461538461538464,
+        "teacher_winrate_delta": -0.21153846153846154,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Expands the 'Returns:' section of function docstrings with detailed descriptions of return value types and meanings.",
+        "old_teacher_winrate": -0.46875,
+        "new_teacher_winrate": -0.6785714285714286,
+        "teacher_winrate_delta": -0.2098214285714286,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds a one-line comment at the top of each code block stating the specific problem or pattern it demonstrates",
+        "old_teacher_winrate": 0.125,
+        "new_teacher_winrate": -0.08333333333333333,
+        "teacher_winrate_delta": -0.20833333333333331,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Show the working code first, then a 2\u20133 bullet 'Common pitfalls' list.",
+        "old_teacher_winrate": 0.4375,
+        "new_teacher_winrate": 0.25,
+        "teacher_winrate_delta": -0.1875,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds a 'Raises:' section to each function's docstring listing specific exceptions and when they occur.",
+        "old_teacher_winrate": -0.53125,
+        "new_teacher_winrate": -0.71875,
+        "teacher_winrate_delta": -0.1875,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Replace single-letter and abbreviated variable names with descriptive multi-word identifiers throughout the code.",
+        "old_teacher_winrate": -0.375,
+        "new_teacher_winrate": -0.5517241379310345,
+        "teacher_winrate_delta": -0.17672413793103448,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds an 'Examples:' section to function docstrings demonstrating typical usage with sample inputs and outputs.",
+        "old_teacher_winrate": -0.375,
+        "new_teacher_winrate": -0.53125,
+        "teacher_winrate_delta": -0.15625,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Add Python type hints to all function signatures in the sample code.",
+        "old_teacher_winrate": -0.1875,
+        "new_teacher_winrate": -0.03333333333333333,
+        "teacher_winrate_delta": 0.15416666666666667,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds inline comments that explain why a line prevents the specific error mentioned in the user's question.",
+        "old_teacher_winrate": 0.21875,
+        "new_teacher_winrate": 0.09375,
+        "teacher_winrate_delta": -0.125,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds inline comments only on lines that differ from common incorrect approaches to the problem.",
+        "old_teacher_winrate": 0.5,
+        "new_teacher_winrate": 0.40625,
+        "teacher_winrate_delta": -0.09375,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds an inline comment on each line that directly fixes or avoids the error mentioned in the user prompt",
+        "old_teacher_winrate": 0.0,
+        "new_teacher_winrate": -0.09375,
+        "teacher_winrate_delta": -0.09375,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Prefer safe accessors with defaults (dict.get, getattr(obj, name, default), slicing) over catching KeyError/AttributeError/IndexError for expected-missing cases.",
+        "old_teacher_winrate": -0.5625,
+        "new_teacher_winrate": -0.65625,
+        "teacher_winrate_delta": -0.09375,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Begins bulleted explanation points with action verbs rather than noun phrases or articles",
+        "old_teacher_winrate": -0.125,
+        "new_teacher_winrate": -0.21875,
+        "teacher_winrate_delta": -0.09375,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Extensively discusses potential errors, edge cases, and failure modes before showing working code",
+        "old_teacher_winrate": -0.46875,
+        "new_teacher_winrate": -0.5625,
+        "teacher_winrate_delta": -0.09375,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Uses formal technical terminology throughout rather than simplified colloquial language.",
+        "old_teacher_winrate": 0.0,
+        "new_teacher_winrate": 0.08333333333333333,
+        "teacher_winrate_delta": 0.08333333333333333,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Add a single 'Pitfall:' sentence warning about a common mistake.",
+        "old_teacher_winrate": 0.90625,
+        "new_teacher_winrate": 0.8333333333333334,
+        "teacher_winrate_delta": -0.07291666666666663,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds a one-line docstring at the start of each function summarizing its purpose.",
+        "old_teacher_winrate": -0.34375,
+        "new_teacher_winrate": -0.28125,
+        "teacher_winrate_delta": 0.0625,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Add a concise function docstring that lists parameters, return value, and which exceptions are handled or raised.",
+        "old_teacher_winrate": -0.5,
+        "new_teacher_winrate": -0.5625,
+        "teacher_winrate_delta": -0.0625,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Replaces second-person constructions like 'you can' with direct imperative statements",
+        "old_teacher_winrate": -0.125,
+        "new_teacher_winrate": -0.1875,
+        "teacher_winrate_delta": -0.0625,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Add a single-line comment above the primary function summarizing its purpose and what it returns.",
+        "old_teacher_winrate": -0.1875,
+        "new_teacher_winrate": -0.2413793103448276,
+        "teacher_winrate_delta": -0.0538793103448276,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds a single top-of-snippet comment stating one key assumption (e.g., Python version or input type).",
+        "old_teacher_winrate": 0.0,
+        "new_teacher_winrate": -0.03125,
+        "teacher_winrate_delta": -0.03125,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Replaces future tense 'will' with present tense when describing what code does",
+        "old_teacher_winrate": 0.03125,
+        "new_teacher_winrate": 0.0,
+        "teacher_winrate_delta": -0.03125,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Eliminates minimizing adverbs like 'simply', 'just', 'merely', and 'only' from instructions",
+        "old_teacher_winrate": -0.03125,
+        "new_teacher_winrate": 0.0,
+        "teacher_winrate_delta": 0.03125,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Use f-strings for all formatted output or logging instead of concatenation or format().",
+        "old_teacher_winrate": -0.125,
+        "new_teacher_winrate": -0.15625,
+        "teacher_winrate_delta": -0.03125,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Removes meta-commentary phrases like 'In this example' and 'Here's how' that describe the response structure itself",
+        "old_teacher_winrate": -0.03125,
+        "new_teacher_winrate": -0.0625,
+        "teacher_winrate_delta": -0.03125,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds a one-line comment immediately before complex expressions explaining what they evaluate to or why they're needed",
+        "old_teacher_winrate": 0.09375,
+        "new_teacher_winrate": 0.06666666666666667,
+        "teacher_winrate_delta": -0.027083333333333334,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds a 'Notes:' section to function docstrings documenting important caveats, limitations, and edge cases.",
+        "old_teacher_winrate": -0.3125,
+        "new_teacher_winrate": -0.32142857142857145,
+        "teacher_winrate_delta": -0.008928571428571452,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds detailed docstrings to function definitions describing parameters, return values, and purpose.",
+        "old_teacher_winrate": -0.6875,
+        "new_teacher_winrate": -0.6875,
+        "teacher_winrate_delta": 0.0,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Include 2\u20133 brief inline comments on key lines in the code.",
+        "old_teacher_winrate": 0.15625,
+        "new_teacher_winrate": 0.15625,
+        "teacher_winrate_delta": 0.0,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Add a one-line docstring to the primary function summarizing its purpose and return value.",
+        "old_teacher_winrate": -0.4375,
+        "new_teacher_winrate": -0.4375,
+        "teacher_winrate_delta": 0.0,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds a one-sentence 'Common mistake:' note after the code highlighting what typically causes the described error.",
+        "old_teacher_winrate": 0.5,
+        "new_teacher_winrate": null,
+        "teacher_winrate_delta": null,
+        "n_pairs": 32
+    },
+    {
+        "attribute": "Adds a brief inline comment after critical operations showing what value or state results from that line",
+        "old_teacher_winrate": -0.03125,
+        "new_teacher_winrate": null,
+        "teacher_winrate_delta": null,
+        "n_pairs": 32
+    }
+]
